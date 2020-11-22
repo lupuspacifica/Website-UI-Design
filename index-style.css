@@ -103,7 +103,6 @@ form .txt_field {
     color: white;
     transform: translateY(-50%);
     pointer-events: none;
-    transition: .5s;
 }
 
 .txt_field span::before {
