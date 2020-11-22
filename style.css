@@ -1,0 +1,171 @@
+/*nav bar*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-weight: 600;
+}
+
+li, a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #855398;
+    height: 80px;
+}
+
+img {
+    width: 60px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #FB8636;
+}
+
+/*body*/
+
+body {
+    background-color: white;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #FB8636;
+    border-radius: 5px;
+}
+
+.login-box h1 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.login-box form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -5px;
+    color: white;
+}
+
+.pass {
+    margin: -5px 0 30px 5px;
+    color: #855398;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+.center-btn {
+    text-align: center;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #FB8636;
+    background: #855398;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 60px;
+}
+
+.button:hover {
+    border-color: #855398;
+    transition: .5s;
+}
+
+.singup-link {
+    margin: 30px 0;
+    text-align: center;
+    color: #855398;
+}
+
+.singup-link a {
+    color: #855398;
+    font-size: 16px;
+}
+
+.singup-link a:hover {
+    text-decoration: underline;
+
+}
