@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+/*nav bar*/
+
 nav {
     font-weight: 600;
 }
@@ -24,12 +26,9 @@ header {
     height: 80px;
 }
 
-img {
-    width: 60px;
-}
-
 .logo {
     cursor: pointer;
+    width: 60px;
 }
 
 .nav-links {
@@ -47,4 +46,49 @@ img {
 
 .nav-links li a:hover {
     color: #FB8636;
+}
+
+/*body*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    
+}
+
+h1 {
+    padding: 40px;
+    color: #FB8636;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.box {
+    background-color: #855398;
+    width:250px;
+    height: 350px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.box-interno {
+    background-color: #FB8636;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+}
+
+.projeto-1 {
+    padding-top: 30px;
+    width: 240px;
+    height: 240px;
 }
